@@ -1,13 +1,11 @@
 [
 	{
 		"id": 1,
-		"text": "id1",
 		"modeID": "1 Test Model Id",
 		"currentId": true
 	},
 	{
 		"id": 2,
-		"text": "id2",
 		"modeID": "2 Test Model Id",
 		"currentId": false
 	}

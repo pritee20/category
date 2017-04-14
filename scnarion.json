@@ -4,11 +4,13 @@
 		"text" : [
 			{
 				"senarioName": "Senario1",
-				"factors": "Factor1"
+				"factors": "Factor1",
+				"id": 1
 			},
 			{
 				"senarioName": "Senario2",
-				"factors": "Factor1"
+				"factors": "Factor1",
+				"id": 2
 			}
 		]
 	},
@@ -17,11 +19,13 @@
 		"text" : [
 			{
 				"senarioName": "Senario3",
-				"factors": "Factor1"
+				"factors": "Factor1",
+				"id": 1
 			},
 			{
 				"senarioName": "Senario4",
-				"factors": "Factor2"
+				"factors": "Factor2",
+				"id": 2
 			}
 		]
 	}	
