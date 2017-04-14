@@ -1,16 +1,21 @@
-$(document).ready(function(){
-	function getScenario(){
+function loadScenarioData(){
     $.ajax({
-      url: 'scnarion.json',
-      success: function(data) {
-        $.each(data, function(key, value) {
-            $("#senario").append("<option value=" + value.id +">" + value.senarioName + "</option>");
-        });
-/*        if($(this).modleid){
-        	$("#senario option[value=" + value.id +"]").attr("selected", true);
-        };*/
-      }
-    });
-};
-getScenario();
-});
+        url: 'scnarion.json',
+        success: function(data) {
+
+            var modelID = $('#parent_selection').val();
+            $("#child_selection").empty();
+
+            $.each(data, function(key, value) {
+
+                if(value.id == modelID){   
+                  $.each(value.text, function(k,v){
+                   $("#child_selection").append("<option value=" + v.id + ">" + v.senarioName + "</option>");
+                  
+                  });                                                              
+                };                                 
+
+            });
+        }
+    });  
+}
